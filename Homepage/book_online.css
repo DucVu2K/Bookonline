@@ -135,13 +135,13 @@ input {
     justify-content: space-between;
 }
 .review-little {
-    /* border: 1px solid; */
+
     padding-top: 24px;
     padding-right: 24px;
-    /* box-shadow: 20px 20px; */
 }
-.img {
+.img img {
     padding-top: 30px;
+    box-shadow: 2px 2px 7px #888888;
 }
 .img-2 {
     display: flex;
@@ -256,9 +256,9 @@ p {
     text-decoration: none;
 }
 
-#best-seller-w {
-    text-decoration: none;
+.same-cat-list p.white-text {
+    margin-bottom: 20px;
 }
 .same-cat-item img {
-    padding-top: 20px;
+    box-shadow: 2px 2px 7px #888888;
 }
