@@ -4,27 +4,20 @@
 	border:0;
   box-sizing: border-box;
 }
-
-
+/*-----------------slide show--------------------------*/
 .mySlides {
   display: none;
 }
-
 img {
   vertical-align: middle;
 }
-
 /* Slideshow container */
-
 .slideshow-container {
   max-width: 1100px;
   position: relative;
   margin: auto;
 }
-
-
 /* The dots/bullets/indicators */
-
 .dot {
   height: 15px;
   width: 15px;
@@ -34,7 +27,31 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
+/*------------------------------box-header 1----------------------*/
+.Menu{
+  max-width: 1100px;
+}
+.box-header-1{
+  display:flex;
+  justify-content:space-between;
+  
+
+}
+.box-header-1 ul{
+  display: flex;
+  flex-direction:row;
+  list-style: none;
+}
+.box-header-1 ul li{
+  padding: 6px;
+}
+.box-header-1 ul li a{
+  text-decoration: none;
+	color: black;
+}
+
+
+
