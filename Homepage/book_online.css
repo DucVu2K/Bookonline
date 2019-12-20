@@ -108,7 +108,7 @@ input {
     flex-direction: row;
     display: flex;
     color: #35CE97;
-    /* line-height: 1.5rem; */
+    line-height: 1.5rem;
 }
 
 .TITLE-1 {
@@ -337,6 +337,9 @@ img {
 h3 {
     padding-bottom: 16px;
 }
+
+
+
 .inf-book {
     padding-top: 24px;
 }
