@@ -1,3 +1,17 @@
+
+$(document).ready(function () {
+  $('.slickslider').slick({
+    
+  });
+});
+$(document).ready(function () {
+  $('.DNN').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
 var slideIndex = 0;
 showSlides();
 
@@ -17,4 +31,6 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
 

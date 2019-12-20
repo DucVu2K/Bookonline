@@ -1,0 +1,17 @@
+.your-class{
+    height: 160px;
+    background-color: #1BA085;
+}
+.slickslider{
+   width: 900px; 
+   margin: auto;
+   height: 160px;
+}
+.slickslider div {
+    text-align: center;
+    padding-top: 5px;
+    color:floralwhite;
+}
+.slickslider div p{
+    font-size: 18px;
+}
