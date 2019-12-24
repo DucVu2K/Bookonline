@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
   $('.slickslider').slick({
-    
+
   });
 });
 $(document).ready(function () {
@@ -20,17 +20,67 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+// const url = `http://5dfb0b8a38678a00145fa82b.mockapi.io/api/book/books/${number}`;
 
+async function getBookData() {
+  // Lay du lieu
+  const response = await fetch(`http://5dfb0b8a38678a00145fa82b.mockapi.io/api/book/books`)
+  const data = await response.json()
+  return data;
+}
+
+
+
+function htmlbook(data, n,a) {
+  // const data = await getBookData();
+  for (let i = n; i < 12; i++) {
+    a.innerHTML += `
+   <div class="book-1">
+        <div class="img-1">
+            <img src="${data[i].img}"
+                alt="" height="176px" width="120px">
+        </div>
+        <div class="name-book-1">
+            <div>
+                <h3>${data[i].name}</h3>
+
+                <a href="#">Chi tiết</a>
+            </div>
+        </div>
+    </div>`
+    if(i==3||i==8){
+      break;
+    }
+
+  }
+
+}
+async function handlesumbit() {
+  const book = document.getElementById("idbook");
+  const book1 = document.getElementById("idbook1");
+
+  const data = await getBookData();
+  // console.log(data[1].img)
+  // console.log(data.length)
+  // let n=0;
+
+  htmlbook(data, 0,book)
+  htmlbook(data,5,book1)
+
+
+}
+
+handlesumbit()
 

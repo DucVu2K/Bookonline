@@ -246,31 +246,42 @@ img {
 
 /*--------------------------------San Pham Hot--------------------*/
 
-.book {
+#book {
     display: flex;
     /* justify-content: space-between; */
     flex-direction: column;
 }
 
-.book div {
+#idbook {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-evenly; */
     flex-direction: row;
+    
+    padding: 10px;
     margin-bottom: 20px;
 }
+#idbook1{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
+    padding: 10px;
+}
+
 
 .book-1 {
     position: relative;
     width: 235px;
     height: 260px;
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin-right:40px;
     /* justify-content: center; */
     /* flex-direction: row; */
 }
 
 .img-1 {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     padding: 10px 50px;
 }
 
@@ -290,10 +301,11 @@ img {
     font-size: 15px;
     justify-content: center;
     flex-direction: column;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     width: 100%;
     text-align: center;
     height: 60px;
+    padding-top: 140px;
 }
 
 .name-book-1 a {
@@ -303,13 +315,13 @@ img {
     background-color: #35CE97;
     color: #FFFFFF;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .name-book-1 h3 {
     /* font-size: 16px; */
     /* color: #1ba085; */
-    margin-top: 20px;
+    margin-top: 25px;
     font: 18px small;
 }
 
