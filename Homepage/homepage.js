@@ -1,4 +1,5 @@
-    function gup( name, url ) {
+
+   function gup( name, url ) {
         if (!url) url = location.href;
         name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
         var regexS = "[\\?&]"+name+"=([^&#]*)";

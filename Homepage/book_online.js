@@ -32,6 +32,9 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+////////////////////////////////////
+
+///////////////////////////
 // const url = `http://5dfb0b8a38678a00145fa82b.mockapi.io/api/book/books/${number}`;
 
 async function getBookData() {
@@ -81,7 +84,7 @@ async function handlesumbit() {
 
 
 }
-handlesumbit()
+// handlesumbit()
 
 async function getData() {
   const response = await fetch("http://5e0209f563d08b0014a285d4.mockapi.io/bookdata");
