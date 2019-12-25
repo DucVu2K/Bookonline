@@ -51,7 +51,12 @@ html {
     line-height: 22px;
     text-align: center;
 }
-
+.nameBook-1 {
+    display: flex;
+}
+.nameBook-2 {
+    display: flex;
+}
 input {
     width: 346px;
     height: 37px;
@@ -115,7 +120,6 @@ input {
     display: flex;
     flex-direction: row-reverse;
 }
-
 .inform {
     display: flex;
     flex-direction: row;

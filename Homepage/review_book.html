@@ -17,69 +17,81 @@
 </head>
 
 <body>
-     <div id="navbar"> 
+    <div id="navbar">
         <div id="image">
             <img src="./Hình/edit_book_onl.png" alt="">
         </div>
         <div class="content">
             <input type="search" placeholder="Nhập tên sách, tuyển tập, tác giả,...">
-            <button>Tìm kiếm</button>
+            <a href="../notfound.html">
+                <button>Tìm kiếm</button>
+            </a>
+            
         </div>
-    </div> -->
+    </div>
+
+    <div id="container">
+
+    </div>
     <div class="body">
         <div class="abc">
             <div id="container">
                 <div class="review-little">
                     <div class="img">
-                        <img src="../Homepage/Hình/BienSuyNghiThanhHanhDong.jpg" alt="Bien suy nghi thanh hanh dong" height="350px">
+                        <img id="img_book" src="../Homepage/Hình/ThayDoiDeThanhCong.jpg" alt="Thay đổi để thành công"
+                            height="400px" width="300px">
                     </div>
                 </div>
                 <div class="inf-book">
                     <div class="info-text-book">
-                        <h1>Biến suy nghĩ thành hành động</h1>
+                        <h1 id="name_book">Thay đổi để thành công</h1>
                         <div class="info-line-book">
                             <span>Tác giả:</span>
                             <p class="detail-tag">
-                                <a class="author-detal"
-                                    href="https://www.amazon.com/Marc-Reklau/e/B00IZALH04%3Fref=dbs_a_mng_rwt_scns_share">Marc
-                                    Reklau</a>
+                                <a id="author" class="author-detal" href="#">Dale Carnegie</a>
                             </p>
                         </div>
 
-                        <p>
+                        <p id="category">
                             Thể loại:
-                            <a class="category-detail" href="https://waka.vn/the-loai/ky-nang-g9lxW.html">Kỹ năng</a>
-                            <a class="category-detail" href="https://waka.vn/the-loai/ky-nang-song-g3AyW.html">, Kỹ năng
-                                sống</a>
+                                <a class="category-detail" href="#">Kỹ năng</a>
+                                <a class="category-detail" href="#">Kỹ năng làm việc</a>
                         </p>
-                        <div class="info-line-book">
+                        <div  class="info-line-book">
                             <span>Nhà xuất bản:</span>
                             <p class="detail-tag">
-                                <a class="publisher-detail"
-                                    href="https://waka.vn/nha-xuat-ban/nxb-lao-dong-pYwW.html">NXB Lao Động</a>
+                                <a id="publisher_book" class="publisher-detail"
+                                    href="#">NXB Lao Động</a>
                             </p>
                         </div>
                         <p>Định dạng: Epub</p>
-                        <p>Ngày cập nhật: 26/11/2019</p>
+                        <p id="updatedate">Ngày cập nhật: 18/07/2019</p>
                     </div>
                     <div class="read-book" data-gacategory="convert web" data-gaaction="click book" data-galabel="read">
-                        <a class="book-info-link" href="https://tiki.vn/bien-suy-nghi-thanh-hanh-dong-p24950329.html?src=search&2hi=1&keyword=bi%E1%BA%BFn+suy+ngh%C4%A9+th%C3%A0nh+h%C3%A0nh+%C4%91%E1%BB%99ng" onclick="openReaderPage(17256,1,0,1,0);">Đọc
+                        <a class="book-info-link"
+                            href="https://tiki.vn/thay-doi-de-thanh-cong-p1580413.html?spid=1580661&utm_source=google&utm_medium=cpc&utm_campaign=SEA_NBR_GGL_PLA_DTP_ALL_VN_ALL_UNK_UNK_C.ALL_X.1057274772_Y.54169762056_V.1580661_W.DT_A.792526845563&gclid=CjwKCAiAi4fwBRBxEiwAEO8_HuZ7xGvxcDIBoRnJQDiU8QPAEGpiq-BPQxbkXDlHWbHEwFJp4bIRPxoCtN0QAvD_BwE"
+                            onclick="openReaderPage(17256,1,0,1,0);">Đọc
                             sách</a>
                     </div>
                     <div class="clearfix" :: after>
                     </div>
                     <div id="book-desc" class="boxcontentdesc text-justify short radio-b-desc pb20 book-info-desc">
-                        <div class="desc-full">
-                            <p><em>Bạn đã bao giờ tự hỏi tại sao một số người dường như lại dễ dàng có được mọi thứ
-                                    trong khi những người khác thì không? Bạn có cảm thấy mình như nạn nhân trong hoàn
-                                    cảnh của chính mình? Bạn có mệt mỏi vì chờ đợi cuộc sống của mình thay đổi? Trong
-                                    “Biến suy nghĩ thành hành động”, bạn sẽ học được những cách để tạo ra cuộc sống mà
-                                    bạn muốn. Những hướng dẫn trong cuốn sách đều dựa trên khoa học thần kinh, tâm lý
-                                    tích cực và các ví dụ thực tiễn với những bài tập tốt nhất giúp bạn nhanh chóng có
-                                    được động lực hướng tới một cuộc sống hạnh phúc hơn, khỏe mạnh hơn.</em></p>
+                        <div id="content_book" class="desc-full">
+                            <p><em>
+                                    Dù trong công việc hoặc trong cuộc sống cá nhân, nếu muốn tiến bộ, chúng ta cần sẵn
+                                    lòng thay đổi cách thức làm việc hoặc thậm chí cách sinh hoạt. Điều này không có
+                                    nghĩa là mọi thứ chúng ta làm đều cần phải thay đổi. Đúng ra là chúng ta nên cởi mở
+                                    với những ý tưởng mới
+                                    Để có thể xác định cách thức tiến hành thay đổi trên con đường đi tới thành công,
+                                    chúng ta sẽ xem xét sự thay đổi dưới nhiều khía cạnh khác nhau:
+                                    Thay đổi như một bước tiến tới thành công
+                                    Tự điều chỉnh để thay đổi
+                                    Thời điểm và cách thức đề nghị hay bắt đầu sự thay đổi
+                                    Cách thức tiến hành thay đổi với tư cách một thành viên của nhóm
+                                    Giảm áp lực căng thẳng khi tiến hành thay đổi...</em></p>
                             <p>- Tác giả -</p>
-                            <p>Mời bạn đón đọc cuốn sách <strong>Biến suy nghĩ thành hành động</strong> - Tác giả
-                                <strong>Marc Reklau.</strong>
+                            <p>Mời bạn đón đọc cuốn sách <strong>Thay đổi để thành công</strong> - Tác giả
+                                <strong>Dale Carnegie.</strong>
                             </p>
                             <p>&nbsp;</p>
                         </div>
@@ -132,63 +144,77 @@
                 <h3>Kỹ Năng Sống</h3>
             </div>
             <div class="DNN">
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/chuyen-xe-nang-luong-tai-ban-2018-p8075388.html?src=search&2hi=1&keyword=chuy%E1%BA%BFn+xe+n%C4%83ng+l%C6%B0%E1%BB%A3ng">
-                        <img src="../Homepage/Hình/ChuyenXeNangLuong.jpg" alt="Chuyen Xe Nang Luong" width="150px" height="218px">
+                <div class="book-2" id="18">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/ChuyenXeNangLuong.jpg" alt="Chuyen Xe Nang Luong" width="150px"
+                            height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>Chuyến Xe Năng Lượng</h4>
                         <p>Jon Gordon</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href= "https://tiki.vn/ban-thong-minh-hon-ban-nghi-tai-ban-2018-p1582323.html?src=search&2hi=1&keyword=b%E1%BA%A1n+th%C3%B4ng+minh+h%C6%A1n+b%E1%BA%A1n+ngh%C4%A9">
-                        <img src="../Homepage/Hình/BanThongMinhHonBanNghi.jpg" alt="Ban thong minh hon ban nghi" width="150px" height="218px">
+                <div class="book-2" id="19">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/BanThongMinhHonBanNghi.jpg" alt="Ban thong minh hon ban nghi"
+                            width="150px" height="218px">
                     </a>
                     <div class="name-book-2">
-                        <h4>Bạn Thông Minh Hơn Mình Nghĩ</h4>
+                        <h4>Bạn Thông Minh Hơn Bạn Nghĩ</h4>
                         <p>Thomas Armstrong</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/chung-ta-quyet-dinh-nhu-the-nao-tai-ban-2018-p2149525.html?src=search&2hi=1&keyword=ch%C3%BAng+ta+quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh+nh%C6%B0+th%E1%BA%BF+n%C3%A0o">
-                        <img src="../Homepage/Hình/ChungTaQuyetDinhntn.jpg" alt="Chung ta quyet dinh ntn" width="150px" height="218px">
+                <div class="book-2" id="20">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/ChungTaQuyetDinhntn.jpg" alt="Chung ta quyet dinh ntn" width="150px"
+                            height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>Chúng Ta Quyết Định Như Thế Nào?</h4>
                         <p>Jonah Lehrer</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/10-dieu-tao-nen-so-phan-tai-ban-2019-p11819283.html?src=search&2hi=1&keyword=10+%C4%91i%E1%BB%81u+t%E1%BA%A1o+n%C3%AAn+s%E1%BB%91+ph%E1%BA%ADn">
-                        <img src="../Homepage/Hình/SuoiNguonYeuThuong.jpg" alt="Suoi nguon yeu thuong" width="150px" height="218px">
+                <div class="book-2" id="21">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/SuoiNguonYeuThuong.jpg" alt="Suoi nguon yeu thuong" width="150px"
+                            height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>Suối Nguồn Yêu Thương</h4>
                         <p>Mộc Mộc</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/dem-toi-va-anh-sang-tai-ban-p463480.html?src=search&2hi=1&keyword=%C4%91%C3%AAm+t%E1%BB%91i+v%C3%A0+%C3%A1nh+s%C3%A1ng">
-                        <img src="../Homepage/Hình/10DieuTaoNenSoPhan.jpg" alt="10 dieu tao nen so phan" width="150px" height="218px">
+                <div class="book-2" id="22">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/10DieuTaoNenSoPhan.jpg" alt="10 dieu tao nen so phan" width="150px"
+                            height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>10 Điều Tạo Nên Số Phận</h4>
                         <p>David Simon, M.D.</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/nhung-quy-tac-trong-cuoc-song-tai-ban-2018-p2563921.html?src=search&2hi=1&keyword=những+quy+tắc+trong+cuộc+sống">
-                        <img src="../Homepage/Hình/NhungQuyTacTrongCuocSong.jpg" alt="Nhung quy tac trong cuoc song" width="150px" height="218px">
+                <div class="book-2" id="23">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/NhungQuyTacTrongCuocSong.jpg" alt="Nhung quy tac trong cuoc song"
+                            width="150px" height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>Những Quy Tắc Trong Cuộc Sống</h4>
-                        <p>	Richard Templar</p>
+                        <p> Richard Templar</p>
                     </div>
                 </div>
-                <div class="book-2">
-                    <a class="img-2" href="https://tiki.vn/thanh-cong-dau-chi-tien-quyen-p12537387.html?src=search&2hi=1&keyword=th%C3%A0nh+c%C3%B4ng+%C4%91%C3%A2u+ch%E1%BB%89+ti%E1%BB%81n+quy%E1%BB%81n">
-                        <img src="../Homepage/Hình/ThanhCongDauChiTienQuyen.jpg" alt="Thanh cong dau chi tien quyen" width="150px" height="218px">
+                <div class="book-2" id="24">
+                    <a class="img-2"
+                        href="#">
+                        <img src="../Homepage/Hình/ThanhCongDauChiTienQuyen.jpg" alt="Thanh cong dau chi tien quyen"
+                            width="150px" height="218px">
                     </a>
                     <div class="name-book-2">
                         <h4>Thành Công Đâu Chỉ Tiền Quyền</h4>
@@ -199,6 +225,7 @@
         </div>
 
     </div>
+
     <div id="footer">
         <div class="TITLE">
             <div class="footer-1">
@@ -233,11 +260,10 @@
 
         </div>
     </div>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="./book_online.js"></script>
+    <script src="homepage.js"></script>
 </body>
 
 </html>

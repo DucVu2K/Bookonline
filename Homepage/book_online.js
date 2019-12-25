@@ -43,7 +43,7 @@ async function getBookData() {
 
 
 
-function htmlbook(data, n,a) {
+function htmlbook(data, n, a) {
   // const data = await getBookData();
   for (let i = n; i < 12; i++) {
     a.innerHTML += `
@@ -60,7 +60,7 @@ function htmlbook(data, n,a) {
             </div>
         </div>
     </div>`
-    if(i==3||i==8){
+    if (i == 3 || i == 8) {
       break;
     }
 
@@ -76,11 +76,45 @@ async function handlesumbit() {
   // console.log(data.length)
   // let n=0;
 
-  htmlbook(data, 0,book)
-  htmlbook(data,5,book1)
+  htmlbook(data, 0, book);
+  htmlbook(data, 5, book1);
 
 
 }
-
 handlesumbit()
+
+async function getData() {
+  const response = await fetch("http://5e0209f563d08b0014a285d4.mockapi.io/bookdata");
+  let data = await response.json();
+  for (let i = 0; i < data.length; i++) {
+    let idAPI = data[i].id;
+    let abs = document.getElementById(`${idAPI}`);
+    abs.addEventListener('click', function () {
+      let checkClick = abs.draggable;
+      if (checkClick == false) {
+        window.location.href = `./review_book.html?id=${idAPI}`;
+      }
+    })
+  }
+}
+
+
+getData();
+
+
+
+//chuyen trang------//
+
+let book_detial = document.getElementById('3');
+// console.dir(book_detial);
+book_detial.addEventListener('click', function () {
+  let checkClick = book_detial.isContentEditable;
+  console.log(checkClick);
+  if (checkClick == false) {
+    window.location.href = 'review_book.html';
+  }
+})
+
+
+  //----------------//
 
