@@ -22,6 +22,9 @@
                     $('#content_book').html("<p>" + obj.content+ "</p>");
                     $("#img_book").attr("src",obj.imgLink);
                     $("title").text(obj.name + " - Book Online 2");
+                    $(".book-info-link").click(function () {
+                        window.location.href = `./read_book.html?id=${id}&chap=1`;
+                    })
 
                     // Lấy dữ liệu thể loại chèn vào
                     let category_data = "Thể Loại: ";
@@ -53,7 +56,7 @@
         let data = await  response.json();
         let slideElement = "";
         data.forEach(function(obj) {
-            let isFounded = obj.kind.some( text => kind.includes(text) );
+            let isFounded = obj.kind.some( text =>  kind.includes(text) );
             if(isFounded){
                 let  x =  `<div class="book-2" id="${obj.id}">
                                     <a class="img-2">

@@ -1,17 +1,9 @@
 
 $(document).ready(function () {
   $('.slickslider').slick({
-
-  });
-});
-$(document).ready(function () {
-  $('.DNN').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-});
+    
+  })
+})
 var slideIndex = 0;
 showSlides();
 
@@ -121,8 +113,66 @@ getData();
 
   //----------------//
 
-  $(document).ready(function () {
-    $('.cslider').slick({
-  
+async function getData() {
+  const response =  await fetch("http://5e0209f563d08b0014a285d4.mockapi.io/bookdata")
+      let data = await  response.json();
+      let book1 = "", book2 = "";
+      for (let i = 0; i < data.length; i++) {
+        let x = `<div class="book-1" id="${data[i].id}">
+                    <div class="img-1">
+                        <img src="${data[i].imgLink}"
+                            alt="" height="176px" width="120px">
+                    </div>
+                    <div class="name-book-1" >
+                        <div>
+                            <h3>${data[i].name}</h3>
+
+                            <a href="#">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>`;
+        if(i<4)
+        {
+          book1 += x;
+        }else if(i < 8)
+        {
+          book2 += x;
+        }
+        else break;
+      }
+      $(".nameBook-1").html(book1);
+      $(".nameBook-2").html(book2);
+      $("div.book-1").click(function(){
+        window.location.href = `./review_book.html?id=${$(this).attr("id")}`;
     });
+}
+
+async function loadSlideBook(){
+  const response =  await fetch("http://5e0209f563d08b0014a285d4.mockapi.io/bookdata")
+  let data = await  response.json();
+  let slideElement = "";
+  data.forEach(function(obj) {
+          let  x =  `<div class="book-2" id="${obj.id}">
+                              <a class="img-2">
+                                  <img src="${obj.imgLink}" alt="${obj.name}" width="150px" height="218px">
+                              </a>
+                              <div class="name-book-2">
+                                  <h4>${obj.name}</h4>
+                                  <p>${obj.author}</p>
+                              </div>
+                      </div>`;
+          slideElement += x;
+  }); 
+  $(".DNN").html(slideElement);
+  $('.DNN').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
   });
+  $("div.book-2").click(function(){
+      window.location.href = `./review_book.html?id=${$(this).attr("id")}`;
+  });
+}
+
+ 
