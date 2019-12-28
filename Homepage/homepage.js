@@ -40,5 +40,5 @@
                 }
         }); 
     }   
-    let id = gup('id',window.location.href);
+    // let id = gup('id',window.location.href);
     getBookData(id);

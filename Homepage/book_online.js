@@ -108,15 +108,15 @@ getData();
 
 //chuyen trang------//
 
-let book_detial = document.getElementById('3');
-// console.dir(book_detial);
-book_detial.addEventListener('click', function () {
-  let checkClick = book_detial.isContentEditable;
-  console.log(checkClick);
-  if (checkClick == false) {
-    window.location.href = 'review_book.html';
-  }
-})
+// let book_detial = document.getElementById('3');
+// // console.dir(book_detial);
+// book_detial.addEventListener('click', function () {
+//   let checkClick = book_detial.isContentEditable;
+//   console.log(checkClick);
+//   if (checkClick == false) {
+//     window.location.href = 'review_book.html';
+//   }
+// })
 
 
   //----------------//
