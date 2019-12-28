@@ -504,3 +504,55 @@ a.book-info-link {
     /* font: 18px small */
     padding: 5px;
 }
+.cbook{
+    display: flex;
+    flex-direction: row;
+}
+.ccontent{
+    padding: 20px 150px;
+    margin-top: 100px;
+    
+
+}
+.ccontent div h2{
+    text-align: center;
+    padding: 20px;
+    color:rgba(0, 0, 0, .3);
+    font-size: 40px;
+    text-shadow: 2px 2px #35CE97;
+    ;
+}
+.ctitle{
+    margin-top:200px ;
+    padding: 20px 20px;
+    height: 350px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+}
+#next{
+    
+    display: flex;
+    /* justify-content:space-around; */
+    flex-direction: row;
+    margin-left: 600px;
+    
+}
+#next a{
+    margin-top:30px;
+    /* margin-right: 300px; */
+    margin-left: 60px;
+    
+    background-color: #35CE97;
+    border-color: #35CE97;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+}
+.ctitle a{
+    text-decoration: none;
+    padding: 10px;
+
+
+    
+}

@@ -46,30 +46,30 @@ async function getBookData() {
 
 
 
-function htmlbook(data, n, a) {
-  // const data = await getBookData();
-  for (let i = n; i < 12; i++) {
-    a.innerHTML += `
-   <div class="book-1">
-        <div class="img-1">
-            <img src="${data[i].img}"
-                alt="" height="176px" width="120px">
-        </div>
-        <div class="name-book-1">
-            <div>
-                <h3>${data[i].name}</h3>
+// function htmlbook(data, n, a) {
+//   // const data = await getBookData();
+//   for (let i = n; i < 12; i++) {
+//     a.innerHTML += `
+//    <div class="book-1">
+//         <div class="img-1">
+//             <img src="${data[i].img}"
+//                 alt="" height="176px" width="120px">
+//         </div>
+//         <div class="name-book-1">
+//             <div>
+//                 <h3>${data[i].name}</h3>
 
-                <a href="#">Chi tiết</a>
-            </div>
-        </div>
-    </div>`
-    if (i == 3 || i == 8) {
-      break;
-    }
+//                 <a href="#">Chi tiết</a>
+//             </div>
+//         </div>
+//     </div>`
+//     if (i == 3 || i == 8) {
+//       break;
+//     }
 
-  }
+//   }
 
-}
+// }
 async function handlesumbit() {
   const book = document.getElementById("idbook");
   const book1 = document.getElementById("idbook1");
@@ -121,3 +121,8 @@ getData();
 
   //----------------//
 
+  $(document).ready(function () {
+    $('.cslider').slick({
+  
+    });
+  });
